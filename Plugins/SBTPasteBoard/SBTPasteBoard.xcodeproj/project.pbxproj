@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A56433855AFB84FB9FD3B24 /* PasteBoardPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5648976E9DF632A730FCC7 /* PasteBoardPlugin.m */; };
+		1A5647C6A57FF48D0A346DB2 /* PasteBoard_Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A56469C53956ACA60FC22F0 /* PasteBoard_Clip.m */; };
+		1A564EF88AA97407B837A4D0 /* PasteBoard_MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A56484C14D00D872F5DE98F /* PasteBoard_MenuItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A564048C145795ED57F4F04 /* SBTPluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTPluginInterface.h; sourceTree = "<group>"; };
+		1A564549C7C66572C4685797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		1A5645B65575838AA63CEAA2 /* SBTPasteBoard.___VARIABLE_bundleExtension___ */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SBTPasteBoard.___VARIABLE_bundleExtension___"; path = SBTPasteBoard.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A56469C53956ACA60FC22F0 /* PasteBoard_Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoard_Clip.m; sourceTree = "<group>"; };
+		1A56484C14D00D872F5DE98F /* PasteBoard_MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoard_MenuItem.m; sourceTree = "<group>"; };
+		1A5648976E9DF632A730FCC7 /* PasteBoardPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoardPlugin.m; sourceTree = "<group>"; };
+		1A5649810FD31BAB03B772C6 /* PasteBoardPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteBoardPlugin.h; sourceTree = "<group>"; };
+		1A5649BF8ECBD2D3D1413430 /* PasteBoard_Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteBoard_Clip.h; sourceTree = "<group>"; };
+		1A564D19D11E234E07657E2A /* PasteBoard_MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteBoard_MenuItem.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A564363F34B8FE8E46FC6E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A56458AEC3ED1A9FC8BF18B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A5645B65575838AA63CEAA2 /* SBTPasteBoard.___VARIABLE_bundleExtension___ */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A564598F875D7B46ABA1441 /* SBTPasteBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1A564549C7C66572C4685797 /* Info.plist */,
+				1A564FC2A302ED085022BB97 /* sources */,
+			);
+			path = SBTPasteBoard;
+			sourceTree = "<group>";
+		};
+		1A564ADD0A7F7C8742ABB1A4 = {
+			isa = PBXGroup;
+			children = (
+				1A56458AEC3ED1A9FC8BF18B /* Products */,
+				1A564598F875D7B46ABA1441 /* SBTPasteBoard */,
+			);
+			sourceTree = "<group>";
+		};
+		1A564FC2A302ED085022BB97 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				1A5649BF8ECBD2D3D1413430 /* PasteBoard_Clip.h */,
+				1A56469C53956ACA60FC22F0 /* PasteBoard_Clip.m */,
+				1A5649810FD31BAB03B772C6 /* PasteBoardPlugin.h */,
+				1A5648976E9DF632A730FCC7 /* PasteBoardPlugin.m */,
+				1A564D19D11E234E07657E2A /* PasteBoard_MenuItem.h */,
+				1A56484C14D00D872F5DE98F /* PasteBoard_MenuItem.m */,
+				1A564048C145795ED57F4F04 /* SBTPluginInterface.h */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A564FF7F864C2E83FEF9D16 /* SBTPasteBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5643159F2B87A831FDF472 /* Build configuration list for PBXNativeTarget "SBTPasteBoard" */;
+			buildPhases = (
+				1A56482FE55F792CE68F5F92 /* Sources */,
+				1A564363F34B8FE8E46FC6E5 /* Frameworks */,
+				1A564C2916BBD9C94E7E9C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBTPasteBoard;
+			productName = SBTPasteBoard;
+			productReference = 1A5645B65575838AA63CEAA2 /* SBTPasteBoard.___VARIABLE_bundleExtension___ */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A564C8A9DA2B4CA88889141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Massimiliano Pesce";
+			};
+			buildConfigurationList = 1A5641DF01F2D3552BEA52B3 /* Build configuration list for PBXProject "SBTPasteBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A564ADD0A7F7C8742ABB1A4;
+			productRefGroup = 1A56458AEC3ED1A9FC8BF18B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A564FF7F864C2E83FEF9D16 /* SBTPasteBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A564C2916BBD9C94E7E9C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A56482FE55F792CE68F5F92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5647C6A57FF48D0A346DB2 /* PasteBoard_Clip.m in Sources */,
+				1A56433855AFB84FB9FD3B24 /* PasteBoardPlugin.m in Sources */,
+				1A564EF88AA97407B837A4D0 /* PasteBoard_MenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A56436270320DB9B39B84B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_EXTENSION = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.11;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1A56446D0C0A48C08612404A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SBTPasteBoard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = maxfish.SBTPasteBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1A5644D72A88C5A2BDA4632D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_EXTENSION = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.11;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1A564A7157E2BE83A8FC0DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SBTPasteBoard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = maxfish.SBTPasteBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A5641DF01F2D3552BEA52B3 /* Build configuration list for PBXProject "SBTPasteBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5644D72A88C5A2BDA4632D /* Debug */,
+				1A56436270320DB9B39B84B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5643159F2B87A831FDF472 /* Build configuration list for PBXNativeTarget "SBTPasteBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A564A7157E2BE83A8FC0DC3 /* Debug */,
+				1A56446D0C0A48C08612404A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A564C8A9DA2B4CA88889141 /* Project object */;
+}

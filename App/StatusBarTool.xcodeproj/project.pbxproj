@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A5640016C6003FC6B7A5917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A564F9461F5BA19FB6AAD9B /* AppDelegate.m */; };
+		1A5642F24CFE76AAFBA6EEFD /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 1A5645577CC6B9F14C76DC56 /* resources */; };
+		1A56437C4F5959AAE0C502D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5641828BC2E74CCCA207A2 /* main.m */; };
+		1A5648766C04B19121FC9D02 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A564B5C9BC89E596AB61C2E /* AppSettings.m */; };
+		1A5648AC7D370333E131BBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A56461221A21A7709A8077C /* Assets.xcassets */; };
+		1A564AE5447B75929F0D7A3F /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A56494520523FE704C4AB1E /* PluginManager.m */; };
+		1A564D0A2214319E5FEDC49B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5644879B9167EBFA1B976E /* Utils.m */; };
+		1A564F36A26C7215779C7B86 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A56490BA49B76B9D2F32F15 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A5640E1A9001B499D5FAD90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A5641828BC2E74CCCA207A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A5644879B9167EBFA1B976E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		1A5644E6B5E104936043ED3D /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		1A5645577CC6B9F14C76DC56 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		1A56461221A21A7709A8077C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A56490BA49B76B9D2F32F15 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		1A56494520523FE704C4AB1E /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
+		1A5649BFDB968EEC4932F1CD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		1A5649FF0C79472286D74B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		1A564AD2C288486DC2974AE0 /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
+		1A564B5C9BC89E596AB61C2E /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		1A564BECCC49E6BF6D255C9A /* StatusBarTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A564D9BC6664267679BC705 /* SBTPluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTPluginInterface.h; sourceTree = "<group>"; };
+		1A564F9461F5BA19FB6AAD9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A56418E22874C962298DFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A5642D3D7C4AB09C98EA0A7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A5649BFDB968EEC4932F1CD /* Utils.h */,
+				1A5644879B9167EBFA1B976E /* Utils.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1A56434A6B4BF3CD41A40F68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A5641828BC2E74CCCA207A2 /* main.m */,
+				1A56461221A21A7709A8077C /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A5644832B173007132B8886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A564BECCC49E6BF6D255C9A /* StatusBarTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A5644EEE76629753DFF2C88 /* StatusBarTool */ = {
+			isa = PBXGroup;
+			children = (
+				1A5649FF0C79472286D74B7A /* Info.plist */,
+				1A5640E1A9001B499D5FAD90 /* AppDelegate.h */,
+				1A564F9461F5BA19FB6AAD9B /* AppDelegate.m */,
+				1A56434A6B4BF3CD41A40F68 /* Supporting Files */,
+				1A564D9BC6664267679BC705 /* SBTPluginInterface.h */,
+				1A564AD2C288486DC2974AE0 /* PluginManager.h */,
+				1A56494520523FE704C4AB1E /* PluginManager.m */,
+				1A564B5C9BC89E596AB61C2E /* AppSettings.m */,
+				1A5644E6B5E104936043ED3D /* AppSettings.h */,
+				1A5642D3D7C4AB09C98EA0A7 /* utils */,
+				1A56490BA49B76B9D2F32F15 /* MainMenu.xib */,
+				1A5645577CC6B9F14C76DC56 /* resources */,
+			);
+			path = StatusBarTool;
+			sourceTree = "<group>";
+		};
+		1A5646E8A29DF88B8339B91C = {
+			isa = PBXGroup;
+			children = (
+				1A5644832B173007132B8886 /* Products */,
+				1A5644EEE76629753DFF2C88 /* StatusBarTool */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A564912CF420425798F1EF1 /* StatusBarTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A56441CAC80FE65C8EE0E2B /* Build configuration list for PBXNativeTarget "StatusBarTool" */;
+			buildPhases = (
+				1A5641E58FD1058118752846 /* Sources */,
+				1A56418E22874C962298DFF1 /* Frameworks */,
+				1A5648361DE0B4D531D33E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusBarTool;
+			productName = StatusBarTool;
+			productReference = 1A564BECCC49E6BF6D255C9A /* StatusBarTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A564E2D6104698EC0535881 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Massimiliano Pesce";
+			};
+			buildConfigurationList = 1A5646BB272E1FA8C3D6B3D1 /* Build configuration list for PBXProject "StatusBarTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A5646E8A29DF88B8339B91C;
+			productRefGroup = 1A5644832B173007132B8886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A564912CF420425798F1EF1 /* StatusBarTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A5648361DE0B4D531D33E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A564F36A26C7215779C7B86 /* MainMenu.xib in Resources */,
+				1A5642F24CFE76AAFBA6EEFD /* resources in Resources */,
+				1A5648AC7D370333E131BBDA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A5641E58FD1058118752846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5640016C6003FC6B7A5917 /* AppDelegate.m in Sources */,
+				1A56437C4F5959AAE0C502D0 /* main.m in Sources */,
+				1A564AE5447B75929F0D7A3F /* PluginManager.m in Sources */,
+				1A5648766C04B19121FC9D02 /* AppSettings.m in Sources */,
+				1A564D0A2214319E5FEDC49B /* Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A56464EBB1645EB991C5BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.11;
+			};
+			name = Release;
+		};
+		1A5648F078DFC561F9FED9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.11;
+			};
+			name = Debug;
+		};
+		1A564F74CD20C3EF8E46BC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StatusBarTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxfish.StatusBarTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1A564F82C447828C39776D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StatusBarTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxfish.StatusBarTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A56441CAC80FE65C8EE0E2B /* Build configuration list for PBXNativeTarget "StatusBarTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A564F82C447828C39776D15 /* Debug */,
+				1A564F74CD20C3EF8E46BC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5646BB272E1FA8C3D6B3D1 /* Build configuration list for PBXProject "StatusBarTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5648F078DFC561F9FED9A2 /* Debug */,
+				1A56464EBB1645EB991C5BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A564E2D6104698EC0535881 /* Project object */;
+}
