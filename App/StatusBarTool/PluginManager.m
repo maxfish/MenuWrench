@@ -39,7 +39,7 @@
         [_pluginBundles addObject:myBundle.principalClass];
     }
 
-    NSLog(@"%d plugins found.", (int) _pluginBundles.count);
+    NSLog(@"%d plugin[s] found.", (int) _pluginBundles.count);
 
     // Create instances of the main classes
     for (Class M in _pluginBundles) {
