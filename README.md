@@ -1,10 +1,15 @@
 # StatusBarTool
 A small macOS status bar app with plugin support.
 
-It requires Dropbox to be installed and the following folder structure to exist within it:
+## Requirements:
+It requires Dropbox to be installed.
+The following folder structure should exist within the Dropbox folder:
 - Apps/
   - StatusBarTool/
     - Plugins/
 
+## Screenshots:
+![StatusBarTool](https://github.com/maxfish/StatusBarTool/raw/master/screenshots/1.png)
 
-NOTE: The icon is a placeholder, it will be replaced soon.
+### Notes
+The status bar icon is a placeholder, it will be replaced soon.
