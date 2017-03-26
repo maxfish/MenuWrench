@@ -77,7 +77,6 @@ NSUInteger const kNumMenuItems = 4;
     [_submenu addItem:[NSMenuItem separatorItem]];
 
     NSMenuItem *clearHistory = [_submenu addItemWithTitle:@"Clear history" action:@selector(clearAll:) keyEquivalent:@""];
-    [clearHistory setState:self.enabled];
     [clearHistory setTarget:self];
 
     [self.submenu addItem:[NSMenuItem separatorItem]];
