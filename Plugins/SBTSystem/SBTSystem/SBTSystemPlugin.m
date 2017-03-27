@@ -7,7 +7,7 @@
 //
 
 #import "SBTSystemPlugin.h"
-#import "FinderRecipes.h"
+#import "SystemDefaults.h"
 
 NSString *const kConfigEnabledKey = @"enable";
 
@@ -21,6 +21,8 @@ NSString *const kConfigEnabledKey = @"enable";
     BOOL _debugEnabled;
     NSMutableDictionary *_pluginConfig;
 
+    SystemDefaults *_defaults;
+
     NSMenuItem *_itemShowHiddenFiles;
     NSMenuItem *_itemShowDesktopIcons;
 }
@@ -32,6 +34,7 @@ NSString *const kConfigEnabledKey = @"enable";
 
         // Default values
         _pluginConfig[kConfigEnabledKey] = @(YES);
+        _defaults = [[SystemDefaults alloc] init];
     }
 
     return self;
@@ -58,18 +61,19 @@ NSString *const kConfigEnabledKey = @"enable";
     NSMenuItem *m2 = [self.submenu addItemWithTitle:@"Defaults" action:nil keyEquivalent:@""];
     NSMenu *s1 = [[NSMenu alloc] init];
 
-    _itemShowHiddenFiles = [s1 addItemWithTitle:@"Show hidden files" action:@selector(toggleShowHiddenFiles:) keyEquivalent:@""];
-    [_itemShowHiddenFiles setTarget:self];
-    [self _initShowHiddenFiles];
-
-    _itemShowDesktopIcons = [s1 addItemWithTitle:@"Show Desktop icons" action:@selector(toggleShowDesktopIcons:) keyEquivalent:@""];
-    [_itemShowDesktopIcons setTarget:self];
-    [self _initShowDesktopIcons];
+    // One menu item per setting
+    for (int index=0; index<_defaults.settings.count; index++){
+        NSArray *setting = _defaults.settings[(NSUInteger) index];
+        NSMenuItem *menuItem = [s1 addItemWithTitle:setting[0] action:@selector(toggleDefaultsMenuItem:) keyEquivalent:@""];
+        [menuItem setTarget:self];
+        [menuItem setTag:index];
+        [self _setDefaultsMenuItemStatus:menuItem];
+    }
 
     [m2 setSubmenu:s1];
     [self.menuItem setSubmenu:self.submenu];
 
-    [[self.submenu addItemWithTitle:@"Clean up 'Open with' associations" action:@selector(cleanOpenWithAssociations:) keyEquivalent:@""] setTarget:FinderRecipes.class];
+    [[self.submenu addItemWithTitle:@"Clean up 'Open with' associations" action:@selector(cleanOpenWithAssociations:) keyEquivalent:@""] setTarget:SystemDefaults.class];
 }
 
 - (NSMenuItem *)menuItem {
@@ -80,28 +84,23 @@ NSString *const kConfigEnabledKey = @"enable";
     return _menuItem;
 }
 
-#pragma - Hidden files
-
-- (void)_initShowHiddenFiles {
-    [_itemShowHiddenFiles setState:FinderRecipes.showHiddenFiles ? NSOnState : NSOffState];
+- (void)_setDefaultsMenuItemStatus:(NSMenuItem *)item {
+    [item setState:[_defaults statusOf:(NSUInteger) item.tag] ? NSOnState : NSOffState];
 }
 
-- (IBAction)toggleShowHiddenFiles:(id)sender {
-    BOOL newState = !(FinderRecipes.showHiddenFiles == NSOnState);
-    [FinderRecipes setShowHiddenFiles:newState];
-    [_itemShowHiddenFiles setState:newState ? NSOnState : NSOffState];
+- (IBAction)toggleDefaultsMenuItem:(id)sender {
+    NSMenuItem *menuItem = sender;
+    NSUInteger default_id = (NSUInteger) menuItem.tag;
+    BOOL newState = ![_defaults statusOf:default_id];
+    [_defaults setDefault:default_id to:newState];
+    [menuItem setState:newState ? NSOnState : NSOffState];
 }
 
-#pragma - Desktop icons
-
-- (void)_initShowDesktopIcons {
-    [_itemShowDesktopIcons setState:FinderRecipes.showDesktopIcons ? NSOnState : NSOffState];
-}
-
-- (IBAction)toggleShowDesktopIcons:(id)sender {
-    BOOL newState = !(FinderRecipes.showDesktopIcons == NSOnState);
-    [FinderRecipes setShowDesktopIcons:newState];
-    [_itemShowDesktopIcons setState:newState ? NSOnState : NSOffState];
++ (void)cleanOpenWithAssociations:(id)sender {
+    NSArray *arguments = @[@"-kill", @"-r", @"-domain", @"local", @"-domain", @"user"];
+    NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister" arguments:arguments];
+    [task waitUntilExit];
+    [[NSTask launchedTaskWithLaunchPath:@"/usr/bin/killall" arguments:@[@"Finder"]] waitUntilExit];
 }
 
 @end

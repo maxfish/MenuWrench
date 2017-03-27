@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		1A56412885A732FDFF36E730 /* SBTSystemPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A56497D858EF39E115E1190 /* SBTSystemPlugin.m */; };
 		1A5648BE8C9B208752B723B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5641EB1AC03052F97FFB01 /* Info.plist */; };
-		1A564CEE0FE81A010238A3BF /* FinderRecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5645A99EEFB7D54DE6389C /* FinderRecipes.m */; };
+		1A564CEE0FE81A010238A3BF /* SystemDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5645A99EEFB7D54DE6389C /* SystemDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A56412218E337665BAE66E7 /* SBTPluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTPluginInterface.h; sourceTree = "<group>"; };
 		1A5641EB1AC03052F97FFB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A564272F09770CE980EEACE /* SBTSystemPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTSystemPlugin.h; sourceTree = "<group>"; };
-		1A5645A99EEFB7D54DE6389C /* FinderRecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderRecipes.m; sourceTree = "<group>"; };
+		1A5645A99EEFB7D54DE6389C /* SystemDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemDefaults.m; sourceTree = "<group>"; };
 		1A56497D858EF39E115E1190 /* SBTSystemPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTSystemPlugin.m; sourceTree = "<group>"; };
 		1A564A4C6A6945E15054EE72 /* SBTSystem.___VARIABLE_bundleExtension___ */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SBTSystem.___VARIABLE_bundleExtension___"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A564EA034F1AB268B9EEC5F /* FinderRecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderRecipes.h; sourceTree = "<group>"; };
+		1A564EA034F1AB268B9EEC5F /* SystemDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDefaults.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 				1A56497D858EF39E115E1190 /* SBTSystemPlugin.m */,
 				1A564272F09770CE980EEACE /* SBTSystemPlugin.h */,
 				1A56412218E337665BAE66E7 /* SBTPluginInterface.h */,
-				1A564EA034F1AB268B9EEC5F /* FinderRecipes.h */,
-				1A5645A99EEFB7D54DE6389C /* FinderRecipes.m */,
+				1A564EA034F1AB268B9EEC5F /* SystemDefaults.h */,
+				1A5645A99EEFB7D54DE6389C /* SystemDefaults.m */,
 			);
 			path = SBTSystem;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A56412885A732FDFF36E730 /* SBTSystemPlugin.m in Sources */,
-				1A564CEE0FE81A010238A3BF /* FinderRecipes.m in Sources */,
+				1A564CEE0FE81A010238A3BF /* SystemDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
