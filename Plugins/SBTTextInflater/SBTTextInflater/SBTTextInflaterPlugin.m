@@ -231,7 +231,7 @@ NSString *const kConfigEnabledKey = @"enable";
     while (stringToSend.length > 0) {
         NSString *piece = [stringToSend substringToIndex:MIN(16, stringToSend.length)];
         stringToSend = [stringToSend substringFromIndex:MIN(16, stringToSend.length)];
-        [self simulateKeyPress:kKeyCode_G flags:CGEventFlags string:piece];
+        [self simulateKeyPress:kKeyCode_G flags:0 string:piece];
     }
 }
 
