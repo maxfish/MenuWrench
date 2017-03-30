@@ -25,7 +25,7 @@
                         @"Show expanded save dialog", @"NSGlobalDomain", @"NSNavPanelExpandedStateForSaveMode", @[@"YES", @"NO"], [NSNull null]
                 ],
                 @[
-                        @"Disable Dashboard", @"com.apple.dashboard", @"mcx-disabled", @[@"NO", @"YES"], @[@"/usr/bin/killall", @"Dock"]
+                        @"Disable Dashboard", @"com.apple.dashboard", @"mcx-disabled", @[@"YES", @"NO"], @[@"/usr/bin/killall", @"Dock"]
                 ],
                 @[
                         @"Don't write .DS_Store on network drives", @"com.apple.desktopservices", @"DSDontWriteNetworkStores", @[@"NO", @"YES"], [NSNull null]
