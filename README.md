@@ -1,4 +1,4 @@
-# StatusBarTool
+# Menu Wrench
 A small macOS status bar app with plugin support.
 
 ## Requirements:
@@ -9,7 +9,4 @@ The following folder structure should exist within the Dropbox folder:
     - Plugins/
 
 ## Screenshots:
-![StatusBarTool](https://github.com/maxfish/StatusBarTool/raw/master/screenshots/1.png)
-
-### Notes
-The status bar icon is a placeholder, it will be replaced soon.
+![StatusBarTool](https://github.com/maxfish/MenuWrench/raw/master/screenshots/1.png)
