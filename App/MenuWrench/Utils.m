@@ -1,3 +1,11 @@
+//
+//  Utils.m
+//  MenuWrench
+//
+//  Created by maxfish on 26/03/17.
+//  Copyright (c) 2017 Massimiliano Pesce. All rights reserved.
+//
+
 #import "Utils.h"
 
 @implementation Utils {

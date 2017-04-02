@@ -10,11 +10,13 @@
 #import "PluginManager.h"
 #import "AppSettings.h"
 #import "Utils.h"
+#import "AboutWindowController.h"
 
 
 @interface AppDelegate () {
     AppSettings *_appSettings;
     PluginManager *_pluginManager;
+    AboutWindowController *_aboutWindowController;
 }
 @end
 
@@ -47,6 +49,13 @@
     startAtLoginMenuItem.state = _appSettings.startAtLogin;
     [Utils toggleLoginItem:_appSettings.startAtLogin];
     [_appSettings saveToFile];
+}
+
+- (IBAction)_showAboutWindow:(id)sender {
+    if (!_aboutWindowController) {
+        _aboutWindowController = [[AboutWindowController alloc] initWithWindowNibName:@"AboutWindow"];
+    }
+    [_aboutWindowController showWindow:[_aboutWindowController window]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification {

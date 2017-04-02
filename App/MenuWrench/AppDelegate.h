@@ -16,4 +16,6 @@
 
 - (IBAction)_toggleStartAtLogin:(id)sender;
 
+- (IBAction)_showAboutWindow:(id)sender;
+
 @end
