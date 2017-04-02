@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		501D12831E917CB100C4556C /* src in Sources */ = {isa = PBXBuildFile; fileRef = 501D12801E917C3B00C4556C /* src */; };
 		501D12921E917D0400C4556C /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D12861E917D0400C4556C /* AboutWindowController.m */; };
 		501D12931E917D0400C4556C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D12881E917D0400C4556C /* AppDelegate.m */; };
 		501D12941E917D0400C4556C /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D128A1E917D0400C4556C /* AppSettings.m */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		1A5649FF0C79472286D74B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A564BECCC49E6BF6D255C9A /* MenuWrench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuWrench.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		501D12801E917C3B00C4556C /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = /Users/max/Documents/git/MenuWrench/App/MenuWrench/src; sourceTree = "<absolute>"; };
 		501D12851E917D0400C4556C /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
 		501D12861E917D0400C4556C /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
 		501D12871E917D0400C4556C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				501D12961E917D0400C4556C /* main.m in Sources */,
-				501D12831E917CB100C4556C /* src in Sources */,
 				501D12921E917D0400C4556C /* AboutWindowController.m in Sources */,
 				501D12941E917D0400C4556C /* AppSettings.m in Sources */,
 				501D12971E917D0400C4556C /* PluginManager.m in Sources */,
