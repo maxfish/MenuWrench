@@ -43,6 +43,12 @@
     }
 }
 
+- (NSString *)_versionString {
+    NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    NSString *build = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    return [[NSString alloc] initWithFormat:@"v.%@ (%@)", version, build];
+}
+
 - (void)_toggleStartAtLogin:(id)sender {
     _appSettings.startAtLogin = !_appSettings.startAtLogin;
     startAtLoginMenuItem.state = _appSettings.startAtLogin;
@@ -53,6 +59,8 @@
 - (IBAction)_showAboutWindow:(id)sender {
     if (!_aboutWindowController) {
         _aboutWindowController = [[NSWindowController alloc] initWithWindowNibName:@"AboutWindow"];
+        NSTextField *versionLabel = [[[_aboutWindowController window] contentView] viewWithTag:1000];
+        [versionLabel setStringValue:[self _versionString]];
     }
     [_aboutWindowController showWindow:[_aboutWindowController window]];
     [NSApp activateIgnoringOtherApps:YES];
