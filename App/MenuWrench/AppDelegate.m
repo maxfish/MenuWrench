@@ -56,6 +56,7 @@
         _aboutWindowController = [[AboutWindowController alloc] initWithWindowNibName:@"AboutWindow"];
     }
     [_aboutWindowController showWindow:[_aboutWindowController window]];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification {
