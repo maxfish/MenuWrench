@@ -10,13 +10,12 @@
 #import "PluginManager.h"
 #import "AppSettings.h"
 #import "Utils.h"
-#import "AboutWindowController.h"
 
 
 @interface AppDelegate () {
     AppSettings *_appSettings;
     PluginManager *_pluginManager;
-    AboutWindowController *_aboutWindowController;
+    NSWindowController *_aboutWindowController;
 }
 @end
 
@@ -53,7 +52,7 @@
 
 - (IBAction)_showAboutWindow:(id)sender {
     if (!_aboutWindowController) {
-        _aboutWindowController = [[AboutWindowController alloc] initWithWindowNibName:@"AboutWindow"];
+        _aboutWindowController = [[NSWindowController alloc] initWithWindowNibName:@"AboutWindow"];
     }
     [_aboutWindowController showWindow:[_aboutWindowController window]];
     [NSApp activateIgnoringOtherApps:YES];
