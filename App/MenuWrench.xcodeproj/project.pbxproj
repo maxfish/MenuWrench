@@ -14,8 +14,7 @@
 		501D12981E917D0400C4556C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D12911E917D0400C4556C /* Utils.m */; };
 		505E7FDA1E917A5600CE5FC7 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */; };
 		505E7FDB1E917A5600CE5FC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FD91E917A5600CE5FC7 /* MainMenu.xib */; };
-		505E7FDE1E917A8100CE5FC7 /* AppIcon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FDC1E917A8100CE5FC7 /* AppIcon512.png */; };
-		505E7FDF1E917A8100CE5FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FDD1E917A8100CE5FC7 /* Assets.xcassets */; };
+		505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FDD1E917A8100CE5FC7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +32,7 @@
 		501D12911E917D0400C4556C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		505E7FD91E917A5600CE5FC7 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		505E7FDC1E917A8100CE5FC7 /* AppIcon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon512.png; sourceTree = "<group>"; };
-		505E7FDD1E917A8100CE5FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505E7FDD1E917A8100CE5FC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +67,7 @@
 				501D128F1E917D0400C4556C /* PluginManager.m */,
 				501D12901E917D0400C4556C /* Utils.h */,
 				501D12911E917D0400C4556C /* Utils.m */,
-				505E7FDC1E917A8100CE5FC7 /* AppIcon512.png */,
-				505E7FDD1E917A8100CE5FC7 /* Assets.xcassets */,
+				505E7FDD1E917A8100CE5FC7 /* Images.xcassets */,
 				505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */,
 				505E7FD91E917A5600CE5FC7 /* MainMenu.xib */,
 				1A5649FF0C79472286D74B7A /* Info.plist */,
@@ -140,8 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505E7FDA1E917A5600CE5FC7 /* AboutWindow.xib in Resources */,
-				505E7FDE1E917A8100CE5FC7 /* AppIcon512.png in Resources */,
-				505E7FDF1E917A8100CE5FC7 /* Assets.xcassets in Resources */,
+				505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */,
 				505E7FDB1E917A5600CE5FC7 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -242,7 +242,7 @@
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19d-oB-m7k">
                         <rect key="frame" x="6" y="199" width="206" height="83"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon512" id="poM-zS-eID"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="poM-zS-eID"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dko-Wi-ERa">
                         <rect key="frame" x="6" y="175" width="208" height="17"/>
@@ -273,10 +273,10 @@
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="176" y="131"/>
+            <point key="canvasLocation" x="176" y="130.5"/>
         </window>
     </objects>
     <resources>
-        <image name="AppIcon512" width="512" height="512"/>
+        <image name="AppIcon" width="128" height="128"/>
     </resources>
 </document>
