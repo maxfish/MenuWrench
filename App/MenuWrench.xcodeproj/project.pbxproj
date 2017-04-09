@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,13 @@
 		501D12961E917D0400C4556C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D128C1E917D0400C4556C /* main.m */; };
 		501D12971E917D0400C4556C /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D128F1E917D0400C4556C /* PluginManager.m */; };
 		501D12981E917D0400C4556C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D12911E917D0400C4556C /* Utils.m */; };
+		503CC54C1E9A424C009A7919 /* PluginCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503CC54A1E9A424C009A7919 /* PluginCellView.m */; };
 		505E7FDA1E917A5600CE5FC7 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */; };
 		505E7FDB1E917A5600CE5FC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FD91E917A5600CE5FC7 /* MainMenu.xib */; };
 		505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FDD1E917A8100CE5FC7 /* Images.xcassets */; };
+		5099B2591E9A30FE00DB25FA /* PluginsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5099B2541E9A30FE00DB25FA /* PluginsWindow.xib */; };
+		5099B25B1E9A30FE00DB25FA /* PluginsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5099B2561E9A30FE00DB25FA /* PluginsWindowController.m */; };
+		50E3FA231E99934300ED429E /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E3FA221E99934300ED429E /* PreferencesWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +34,15 @@
 		501D128F1E917D0400C4556C /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
 		501D12901E917D0400C4556C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		501D12911E917D0400C4556C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		503CC54A1E9A424C009A7919 /* PluginCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginCellView.m; sourceTree = "<group>"; };
+		503CC54B1E9A424C009A7919 /* PluginCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginCellView.h; sourceTree = "<group>"; };
 		505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		505E7FD91E917A5600CE5FC7 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		505E7FDD1E917A8100CE5FC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5099B2541E9A30FE00DB25FA /* PluginsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluginsWindow.xib; sourceTree = "<group>"; };
+		5099B2561E9A30FE00DB25FA /* PluginsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginsWindowController.m; sourceTree = "<group>"; };
+		5099B2581E9A30FE00DB25FA /* PluginsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginsWindowController.h; sourceTree = "<group>"; };
+		50E3FA221E99934300ED429E /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,18 +67,19 @@
 		1A5644EEE76629753DFF2C88 /* MenuWrench */ = {
 			isa = PBXGroup;
 			children = (
+				5099B25D1E9A3DFF00DB25FA /* Plugins */,
+				5099B25C1E9A3DDE00DB25FA /* PluginsSettings */,
 				501D128C1E917D0400C4556C /* main.m */,
 				501D128D1E917D0400C4556C /* MWPluginInterface.h */,
 				501D12871E917D0400C4556C /* AppDelegate.h */,
 				501D12881E917D0400C4556C /* AppDelegate.m */,
 				501D12891E917D0400C4556C /* AppSettings.h */,
 				501D128A1E917D0400C4556C /* AppSettings.m */,
-				501D128E1E917D0400C4556C /* PluginManager.h */,
-				501D128F1E917D0400C4556C /* PluginManager.m */,
 				501D12901E917D0400C4556C /* Utils.h */,
 				501D12911E917D0400C4556C /* Utils.m */,
 				505E7FDD1E917A8100CE5FC7 /* Images.xcassets */,
 				505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */,
+				50E3FA221E99934300ED429E /* PreferencesWindow.xib */,
 				505E7FD91E917A5600CE5FC7 /* MainMenu.xib */,
 				1A5649FF0C79472286D74B7A /* Info.plist */,
 			);
@@ -81,6 +92,27 @@
 				1A5644832B173007132B8886 /* Products */,
 				1A5644EEE76629753DFF2C88 /* MenuWrench */,
 			);
+			sourceTree = "<group>";
+		};
+		5099B25C1E9A3DDE00DB25FA /* PluginsSettings */ = {
+			isa = PBXGroup;
+			children = (
+				503CC54A1E9A424C009A7919 /* PluginCellView.m */,
+				503CC54B1E9A424C009A7919 /* PluginCellView.h */,
+				5099B2541E9A30FE00DB25FA /* PluginsWindow.xib */,
+				5099B2581E9A30FE00DB25FA /* PluginsWindowController.h */,
+				5099B2561E9A30FE00DB25FA /* PluginsWindowController.m */,
+			);
+			name = PluginsSettings;
+			sourceTree = "<group>";
+		};
+		5099B25D1E9A3DFF00DB25FA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				501D128E1E917D0400C4556C /* PluginManager.h */,
+				501D128F1E917D0400C4556C /* PluginManager.m */,
+			);
+			name = Plugins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +145,14 @@
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Massimiliano Pesce";
+				TargetAttributes = {
+					1A564912CF420425798F1EF1 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 1A5646BB272E1FA8C3D6B3D1 /* Build configuration list for PBXProject "MenuWrench" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -136,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E3FA231E99934300ED429E /* PreferencesWindow.xib in Resources */,
 				505E7FDA1E917A5600CE5FC7 /* AboutWindow.xib in Resources */,
+				5099B2591E9A30FE00DB25FA /* PluginsWindow.xib in Resources */,
 				505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */,
 				505E7FDB1E917A5600CE5FC7 /* MainMenu.xib in Resources */,
 			);
@@ -181,6 +220,8 @@
 				501D12961E917D0400C4556C /* main.m in Sources */,
 				501D12941E917D0400C4556C /* AppSettings.m in Sources */,
 				501D12971E917D0400C4556C /* PluginManager.m in Sources */,
+				5099B25B1E9A30FE00DB25FA /* PluginsWindowController.m in Sources */,
+				503CC54C1E9A424C009A7919 /* PluginCellView.m in Sources */,
 				501D12981E917D0400C4556C /* Utils.m in Sources */,
 				501D12931E917D0400C4556C /* AppDelegate.m in Sources */,
 			);
@@ -192,6 +233,7 @@
 		1A56464EBB1645EB991C5BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -232,6 +274,7 @@
 		1A5648F078DFC561F9FED9A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -280,11 +323,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuWrench/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxfish.MenuWrench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MenuWrench/MenuWrench-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -292,11 +338,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuWrench/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxfish.MenuWrench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MenuWrench/MenuWrench-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};

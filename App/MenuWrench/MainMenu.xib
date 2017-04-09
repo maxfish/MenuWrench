@@ -26,6 +26,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Preferences" id="648">
                         <items>
+                            <menuItem title="Plugins" id="e6S-vd-SBT">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="_showPreferencesWindow:" target="494" id="Lyr-Dr-tc7"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Start at login" id="649">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -35,10 +41,10 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="About" id="e6S-vd-SBT">
+                <menuItem title="About" id="OK0-nl-yzB">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="_showAboutWindow:" target="494" id="fvX-0q-vRp"/>
+                        <action selector="_showAboutWindow:" target="494" id="F0n-lZ-bpj"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="640"/>

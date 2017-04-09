@@ -10,12 +10,14 @@
 #import "PluginManager.h"
 #import "AppSettings.h"
 #import "Utils.h"
+#import "PluginsWindowController.h"
 
 
 @interface AppDelegate () {
     AppSettings *_appSettings;
     PluginManager *_pluginManager;
     NSWindowController *_aboutWindowController;
+    PluginsWindowController *_preferencesWindowController;
 }
 @end
 
@@ -63,6 +65,14 @@
         [versionLabel setStringValue:[self _versionString]];
     }
     [_aboutWindowController showWindow:[_aboutWindowController window]];
+    [NSApp activateIgnoringOtherApps:YES];
+}
+
+- (IBAction)_showPreferencesWindow:(id)sender {
+    if (!_preferencesWindowController) {
+        _preferencesWindowController = [[PluginsWindowController alloc] initWithWindowNibName:@"PluginsWindow"];
+    }
+    [_preferencesWindowController showWindow:[_preferencesWindowController window]];
     [NSApp activateIgnoringOtherApps:YES];
 }
 
