@@ -11,9 +11,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-NSString *const kBundlePluginName = @"PluginNameString";
-NSString *const kAppInfoConfigPath = @"AppConfigPath";
-NSString *const kAppInfoDebugEnabled = @"AppDebugEnabled";
+#define kBundlePluginName @"PluginNameString"
+#define kAppInfoConfigPath @"AppConfigPath"
+#define kAppInfoDebugEnabled @"AppDebugEnabled"
 
 #pragma -
 

@@ -7,15 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "PluginManager.h"
+#import "PluginsManager.h"
 #import "AppSettings.h"
 #import "Utils.h"
 #import "PluginsWindowController.h"
 
-
 @interface AppDelegate () {
     AppSettings *_appSettings;
-    PluginManager *_pluginManager;
+    PluginsManager *_pluginManager;
     NSWindowController *_aboutWindowController;
     PluginsWindowController *_preferencesWindowController;
 }
@@ -35,13 +34,18 @@
     startAtLoginMenuItem.state = _appSettings.startAtLogin;
     [Utils toggleLoginItem:_appSettings.startAtLogin];
 
-    _pluginManager = [[PluginManager alloc] initWithAppSettings:_appSettings];
+    _pluginManager = [[PluginsManager alloc] initWithAppSettings:_appSettings];
     [_pluginManager loadPlugins];
     [_pluginManager startPlugins];
 
+    // Build the plugins menus
     int menuIndex = 0;
-    for (NSMenuItem *menuItem in [_pluginManager menuItems]) {
-        [statusMenu insertItem:menuItem atIndex:menuIndex++];
+    NSArray<Plugin *> *plugins = [_pluginManager pluginsList];
+    for (Plugin *plugin in plugins) {
+        NSMenuItem *menuItem = [plugin.instance menuItem];
+        if (menuItem) {
+            [statusMenu insertItem:menuItem atIndex:menuIndex++];
+        }
     }
 }
 

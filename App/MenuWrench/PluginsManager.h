@@ -1,5 +1,5 @@
 //
-//  PluginManager.h
+//  PluginsManager.h
 //  MenuWrench
 //
 //  Created by maxfish on 26/03/17.
@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Plugin.h"
 
 @class AppSettings;
 
-@interface PluginManager : NSObject
+@interface PluginsManager : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -22,6 +23,6 @@
 
 - (void)stopPlugins;
 
-@property(NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *menuItems;
+@property(NS_NONATOMIC_IOSONLY, readonly, copy) NSArray<Plugin *> *pluginsList;
 
 @end

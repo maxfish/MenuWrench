@@ -101,7 +101,7 @@
                             </subviews>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="4KO-pM-cV7">
-                            <rect key="frame" x="1" y="275" width="480" height="15"/>
+                            <rect key="frame" x="1" y="-14" width="0.0" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7UH-cb-pau">
@@ -111,7 +111,7 @@
                     </scrollView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-20" y="81.5"/>
+            <point key="canvasLocation" x="19" y="134"/>
         </window>
     </objects>
 </document>

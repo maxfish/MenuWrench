@@ -36,22 +36,23 @@
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return 5;
 }
-- (BOOL)selectionShouldChangeInTableView:(NSTableView *)aTableView
-{
+
+- (BOOL)selectionShouldChangeInTableView:(NSTableView *)aTableView {
     return NO;
 }
+
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
-        return [tableView rowHeight];
+    return [tableView rowHeight];
 }
 
 - (NSView *)tableView:(NSTableView *)tableView
    viewForTableColumn:(NSTableColumn *)tableColumn
                   row:(NSInteger)row {
 
-        PluginCellView *cell = [tableView makeViewWithIdentifier:@"PluginCellView" owner:self];
-        [cell setupWithPluginId:@""];
+    PluginCellView *cell = [tableView makeViewWithIdentifier:@"PluginCellView" owner:self];
+    [cell setupWithPluginId:@""];
 
-        return cell;
+    return cell;
 }
 
 
