@@ -19,6 +19,14 @@
 
 - (NSObject <MWPluginInterface> *)instance;
 
+- (NSString *)name;
+
+- (NSString *)description;
+
+- (NSString *)copyright;
+
+- (NSString *)version;
+
 - (BOOL)isEnabled;
 
 @end

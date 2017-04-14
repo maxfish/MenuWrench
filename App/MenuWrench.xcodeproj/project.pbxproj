@@ -19,7 +19,6 @@
 		505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E7FDD1E917A8100CE5FC7 /* Images.xcassets */; };
 		5099B2591E9A30FE00DB25FA /* PluginsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5099B2541E9A30FE00DB25FA /* PluginsWindow.xib */; };
 		5099B25B1E9A30FE00DB25FA /* PluginsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5099B2561E9A30FE00DB25FA /* PluginsWindowController.m */; };
-		50E3FA231E99934300ED429E /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E3FA221E99934300ED429E /* PreferencesWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		5099B2541E9A30FE00DB25FA /* PluginsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluginsWindow.xib; sourceTree = "<group>"; };
 		5099B2561E9A30FE00DB25FA /* PluginsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginsWindowController.m; sourceTree = "<group>"; };
 		5099B2581E9A30FE00DB25FA /* PluginsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginsWindowController.h; sourceTree = "<group>"; };
-		50E3FA221E99934300ED429E /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 				501D12911E917D0400C4556C /* Utils.m */,
 				505E7FDD1E917A8100CE5FC7 /* Images.xcassets */,
 				505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */,
-				50E3FA221E99934300ED429E /* PreferencesWindow.xib */,
 				505E7FD91E917A5600CE5FC7 /* MainMenu.xib */,
 			);
 			path = MenuWrench;
@@ -186,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E3FA231E99934300ED429E /* PreferencesWindow.xib in Resources */,
 				505E7FDA1E917A5600CE5FC7 /* AboutWindow.xib in Resources */,
 				5099B2591E9A30FE00DB25FA /* PluginsWindow.xib in Resources */,
 				505E7FDF1E917A8100CE5FC7 /* Images.xcassets in Resources */,

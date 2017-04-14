@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Plugin;
+
 @interface PluginCellView : NSTableCellView
 
-- (void)setupWithPluginId:(NSString *)pluginId;
+- (void)setupWithPlugin:(Plugin *)plugin;
 
 @end

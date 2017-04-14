@@ -8,38 +8,37 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PluginsWindowController">
             <connections>
-                <outlet property="_tableView" destination="qhf-Cz-BF0" id="U3k-CZ-DX2"/>
-                <outlet property="tableView" destination="qhf-Cz-BF0" id="oOB-iZ-w1J"/>
-                <outlet property="window" destination="IeZ-sD-AD0" id="faq-de-59v"/>
+                <outlet property="tableView" destination="qhf-Cz-BF0" id="Kjf-WQ-kiZ"/>
+                <outlet property="window" destination="IeZ-sD-AD0" id="Nzb-sk-2LG"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Plugins" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IeZ-sD-AD0">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <rect key="contentRect" x="1644" y="799" width="480" height="327"/>
+            <rect key="contentRect" x="1644" y="799" width="480" height="281"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-            <value key="minSize" type="size" width="480" height="327"/>
+            <value key="minSize" type="size" width="480" height="281"/>
             <view key="contentView" id="Vfk-fP-ef4">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="327"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="281"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="47" horizontalPageScroll="10" verticalLineScroll="47" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfm-88-hTa">
-                        <rect key="frame" x="-1" y="37" width="482" height="291"/>
+                        <rect key="frame" x="-1" y="-1" width="482" height="283"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" id="5A1-nq-rKm">
-                            <rect key="frame" x="1" y="1" width="480" height="289"/>
+                            <rect key="frame" x="1" y="1" width="480" height="281"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" alternatingRowBackgroundColors="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="45" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="qhf-Cz-BF0">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="289"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="281"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <tableViewGridLines key="gridStyleMask" horizontal="YES"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn editable="NO" width="477" minWidth="40" maxWidth="1000" id="Emu-bF-Pf7">
+                                        <tableColumn editable="NO" width="460" minWidth="40" maxWidth="1000" id="Emu-bF-Pf7">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -49,11 +48,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="PluginCellView" id="HYK-ya-kwc" userLabel="PluginCellView" customClass="PluginCellView">
-                                                    <rect key="frame" x="1" y="1" width="477" height="45"/>
+                                                    <rect key="frame" x="1" y="1" width="460" height="45"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbo-05-9d9">
-                                                            <rect key="frame" x="27" y="21" width="449" height="20"/>
+                                                            <rect key="frame" x="27" y="21" width="432" height="20"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" truncatesLastVisibleLine="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Plugin name" usesSingleLineMode="YES" id="m0p-QS-S2m">
                                                                 <font key="font" metaFont="system"/>
@@ -61,17 +60,8 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
-                                                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyg-20-vZO">
-                                                            <rect key="frame" x="1" y="3" width="4" height="39"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" drawsBackground="YES" id="vOl-by-mZR">
-                                                                <font key="font" metaFont="system"/>
-                                                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </textFieldCell>
-                                                        </textField>
                                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPM-hh-bFw">
-                                                            <rect key="frame" x="27" y="5" width="449" height="16"/>
+                                                            <rect key="frame" x="27" y="5" width="432" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" title="Description" usesSingleLineMode="YES" id="fcT-7X-C3i">
                                                                 <font key="font" metaFont="smallSystem"/>
@@ -80,9 +70,9 @@
                                                             </textFieldCell>
                                                         </textField>
                                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hk5-xV-IuA">
-                                                            <rect key="frame" x="7" y="23" width="22" height="18"/>
+                                                            <rect key="frame" x="5" y="23" width="22" height="18"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="70J-XM-fHK">
+                                                            <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="70J-XM-fHK">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
@@ -111,7 +101,7 @@
                     </scrollView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="19" y="134"/>
+            <point key="canvasLocation" x="19" y="110.5"/>
         </window>
     </objects>
 </document>

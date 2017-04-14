@@ -29,7 +29,6 @@
 
 - (void)loadPlugins {
     NSString *pluginFolder = [NSString stringWithFormat:@"%@/plugins", _appSettings.settingsPath];
-
     NSArray *pluginNames = [Utils filesWithinFolder:pluginFolder withExtension:@"plugin"];
     for (NSString *pluginName in pluginNames) {
         @try {

@@ -32,6 +32,24 @@
     return _instance;
 }
 
+- (NSString *)name {
+    return [_bundle objectForInfoDictionaryKey:@"PluginNameString"];
+}
+
+- (NSString *)description {
+    return [_bundle objectForInfoDictionaryKey:@"PluginDescriptionString"];
+}
+
+- (NSString *)copyright {
+    return [_bundle objectForInfoDictionaryKey:@"NSHumanReadableCopyright"];
+}
+
+- (NSString *)version {
+    NSString *version = [_bundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    NSString *build = [_bundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+    return [[NSString alloc] initWithFormat:@"%@ (%@)", version, build];
+}
+
 - (BOOL)isEnabled {
     return _enabled;
 }

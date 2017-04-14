@@ -7,6 +7,7 @@
 //
 
 #import "PluginCellView.h"
+#import "Plugin.h"
 
 @implementation PluginCellView {
     IBOutlet NSButton *_enabledCheck;
@@ -17,8 +18,10 @@
 + (void)initialize {
 }
 
-- (void)setupWithPluginId:(NSString *)pluginId {
-    [_nameLabel setStringValue:@"AAAA"];
+- (void)setupWithPlugin:(Plugin *)plugin {
+    NSString *nameString = [[NSString alloc] initWithFormat:@"%@ v.%@", plugin.name, plugin.version];
+    [_nameLabel setStringValue:nameString];
+    [_descriptionLabel setStringValue:plugin.description];
 }
 
 @end

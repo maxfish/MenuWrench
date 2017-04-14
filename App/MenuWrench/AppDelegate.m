@@ -15,9 +15,9 @@
 
 @interface AppDelegate () {
     AppSettings *_appSettings;
-    PluginsManager *_pluginManager;
+    PluginsManager *_pluginsManager;
     NSWindowController *_aboutWindowController;
-    PluginsWindowController *_preferencesWindowController;
+    PluginsWindowController *_pluginsWindowController;
 }
 @end
 
@@ -35,13 +35,13 @@
     startAtLoginMenuItem.state = _appSettings.startAtLogin;
     [Utils toggleLoginItem:_appSettings.startAtLogin];
 
-    _pluginManager = [[PluginsManager alloc] initWithAppSettings:_appSettings];
-    [_pluginManager loadPlugins];
-    [_pluginManager startPlugins];
+    _pluginsManager = [[PluginsManager alloc] initWithAppSettings:_appSettings];
+    [_pluginsManager loadPlugins];
+    [_pluginsManager startPlugins];
 
     // Build the plugins menus
     int menuIndex = 0;
-    NSArray<Plugin *> *plugins = [_pluginManager pluginsList];
+    NSArray<Plugin *> *plugins = [_pluginsManager pluginsList];
     for (Plugin *plugin in plugins) {
         NSMenuItem *menuItem = [plugin.instance menuItem];
         if (menuItem) {
@@ -74,15 +74,16 @@
 }
 
 - (IBAction)_showPreferencesWindow:(id)sender {
-    if (!_preferencesWindowController) {
-        _preferencesWindowController = [[PluginsWindowController alloc] initWithWindowNibName:@"PluginsWindow"];
+    if (!_pluginsWindowController) {
+        _pluginsWindowController = [[PluginsWindowController alloc] initWithWindowNibName:@"PluginsWindow"];
     }
-    [_preferencesWindowController showWindow:[_preferencesWindowController window]];
+    [_pluginsWindowController showWindow:[_pluginsWindowController window]];
+    [_pluginsWindowController setPluginsList:_pluginsManager.pluginsList];
     [NSApp activateIgnoringOtherApps:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification {
-    [_pluginManager stopPlugins];
+    [_pluginsManager stopPlugins];
 }
 
 @end

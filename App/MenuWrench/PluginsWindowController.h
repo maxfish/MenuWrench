@@ -6,7 +6,14 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
+@class PluginsManager;
+@class Plugin;
+
 
 @interface PluginsWindowController : NSWindowController <NSTextFieldDelegate, NSTableViewDelegate, NSTableViewDataSource>
+
+@property IBOutlet NSTableView *tableView;
+
+- (void)setPluginsList:(NSArray<Plugin *> *)pluginsList;
 
 @end

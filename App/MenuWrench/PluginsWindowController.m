@@ -5,36 +5,30 @@
 
 #import "PluginsWindowController.h"
 #import "PluginCellView.h"
+#import "PluginsManager.h"
 
 
 @implementation PluginsWindowController {
-    NSMutableArray *_list;
-    IBOutlet NSTableView *_tableView;
+    NSArray<Plugin *> *_pluginsList;
 }
 
 - (instancetype)initWithWindowNibName:(NSString *)windowNibName {
     self = [super initWithWindowNibName:windowNibName];
     if (self) {
-        _list = [[NSMutableArray alloc] init];
-        _tableView.dataSource = self;
-        _tableView.delegate = self;
     }
 
     return self;
 }
 
-- (void)_populateTableList {
-//    [_list addObject:@"Today"];
-//    [_list addObject:@"Ahhhh"];
-//    [_list addObject:@"asdrqwerqw"];
-//    [_list addObject:@"asdrqwerqw"];
-//    [_list addObject:@"asdrqwerqw"];
+- (void)setPluginsList:(NSArray<Plugin *> *)pluginsList {
+    _pluginsList = pluginsList;
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [_tableView reloadData];
 }
 
-#pragma -
-
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return 5;
+    return _pluginsList.count;
 }
 
 - (BOOL)selectionShouldChangeInTableView:(NSTableView *)aTableView {
@@ -50,7 +44,7 @@
                   row:(NSInteger)row {
 
     PluginCellView *cell = [tableView makeViewWithIdentifier:@"PluginCellView" owner:self];
-    [cell setupWithPluginId:@""];
+    [cell setupWithPlugin:_pluginsList[row]];
 
     return cell;
 }
