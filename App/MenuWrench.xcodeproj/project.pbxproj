@@ -70,10 +70,9 @@
 		1A5644EEE76629753DFF2C88 /* MenuWrench */ = {
 			isa = PBXGroup;
 			children = (
+				508ADB291EA12B8200C44B34 /* Misc */,
 				5099B25D1E9A3DFF00DB25FA /* Plugins */,
 				5099B25C1E9A3DDE00DB25FA /* PluginsSettings */,
-				501D128C1E917D0400C4556C /* main.m */,
-				501D128D1E917D0400C4556C /* MWPluginInterface.h */,
 				501D12871E917D0400C4556C /* AppDelegate.h */,
 				501D12881E917D0400C4556C /* AppDelegate.m */,
 				501D12891E917D0400C4556C /* AppSettings.h */,
@@ -84,7 +83,6 @@
 				505E7FD81E917A5600CE5FC7 /* AboutWindow.xib */,
 				50E3FA221E99934300ED429E /* PreferencesWindow.xib */,
 				505E7FD91E917A5600CE5FC7 /* MainMenu.xib */,
-				1A5649FF0C79472286D74B7A /* Info.plist */,
 			);
 			path = MenuWrench;
 			sourceTree = "<group>";
@@ -95,6 +93,15 @@
 				1A5644832B173007132B8886 /* Products */,
 				1A5644EEE76629753DFF2C88 /* MenuWrench */,
 			);
+			sourceTree = "<group>";
+		};
+		508ADB291EA12B8200C44B34 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				501D128C1E917D0400C4556C /* main.m */,
+				1A5649FF0C79472286D74B7A /* Info.plist */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 		5099B25C1E9A3DDE00DB25FA /* PluginsSettings */ = {
@@ -112,6 +119,7 @@
 		5099B25D1E9A3DFF00DB25FA /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				501D128D1E917D0400C4556C /* MWPluginInterface.h */,
 				501D128E1E917D0400C4556C /* PluginsManager.h */,
 				501D128F1E917D0400C4556C /* PluginsManager.m */,
 				1A564D9EC9A4CA6042F7C98F /* Plugin.m */,
