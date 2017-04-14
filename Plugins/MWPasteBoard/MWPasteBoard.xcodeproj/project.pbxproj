@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		501FF8691EA133AB0066FF9A /* MWPasteBoardPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FF8631EA133AB0066FF9A /* MWPasteBoardPlugin.m */; };
+		501FF86A1EA133AB0066FF9A /* PasteBoard_MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FF8661EA133AB0066FF9A /* PasteBoard_MenuItem.m */; };
+		501FF86B1EA133AB0066FF9A /* PasteBoard_Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FF8681EA133AB0066FF9A /* PasteBoard_Clip.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		501FF8591EA133860066FF9A /* MWPasteBoard.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWPasteBoard.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		501FF85C1EA133860066FF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501FF8621EA133AB0066FF9A /* MWPluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPluginInterface.h; sourceTree = "<group>"; };
+		501FF8631EA133AB0066FF9A /* MWPasteBoardPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPasteBoardPlugin.m; sourceTree = "<group>"; };
+		501FF8641EA133AB0066FF9A /* PasteBoard_Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteBoard_Clip.h; sourceTree = "<group>"; };
+		501FF8651EA133AB0066FF9A /* PasteBoard_MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteBoard_MenuItem.h; sourceTree = "<group>"; };
+		501FF8661EA133AB0066FF9A /* PasteBoard_MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoard_MenuItem.m; sourceTree = "<group>"; };
+		501FF8671EA133AB0066FF9A /* MWPasteBoardPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPasteBoardPlugin.h; sourceTree = "<group>"; };
+		501FF8681EA133AB0066FF9A /* PasteBoard_Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoard_Clip.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		501FF8561EA133860066FF9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		501FF8501EA133860066FF9A = {
+			isa = PBXGroup;
+			children = (
+				501FF85B1EA133860066FF9A /* MWPasteBoard */,
+				501FF85A1EA133860066FF9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		501FF85A1EA133860066FF9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				501FF8591EA133860066FF9A /* MWPasteBoard.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		501FF85B1EA133860066FF9A /* MWPasteBoard */ = {
+			isa = PBXGroup;
+			children = (
+				501FF8621EA133AB0066FF9A /* MWPluginInterface.h */,
+				501FF8631EA133AB0066FF9A /* MWPasteBoardPlugin.m */,
+				501FF8641EA133AB0066FF9A /* PasteBoard_Clip.h */,
+				501FF8651EA133AB0066FF9A /* PasteBoard_MenuItem.h */,
+				501FF8661EA133AB0066FF9A /* PasteBoard_MenuItem.m */,
+				501FF8671EA133AB0066FF9A /* MWPasteBoardPlugin.h */,
+				501FF8681EA133AB0066FF9A /* PasteBoard_Clip.m */,
+				501FF85C1EA133860066FF9A /* Info.plist */,
+			);
+			path = MWPasteBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		501FF8581EA133860066FF9A /* MWPasteBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501FF85F1EA133860066FF9A /* Build configuration list for PBXNativeTarget "MWPasteBoard" */;
+			buildPhases = (
+				501FF8551EA133860066FF9A /* Sources */,
+				501FF8561EA133860066FF9A /* Frameworks */,
+				501FF8571EA133860066FF9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWPasteBoard;
+			productName = MWPasteBoard;
+			productReference = 501FF8591EA133860066FF9A /* MWPasteBoard.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		501FF8511EA133860066FF9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Massimiliano Pesce";
+				TargetAttributes = {
+					501FF8581EA133860066FF9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 501FF8541EA133860066FF9A /* Build configuration list for PBXProject "MWPasteBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 501FF8501EA133860066FF9A;
+			productRefGroup = 501FF85A1EA133860066FF9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				501FF8581EA133860066FF9A /* MWPasteBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		501FF8571EA133860066FF9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		501FF8551EA133860066FF9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501FF86B1EA133AB0066FF9A /* PasteBoard_Clip.m in Sources */,
+				501FF86A1EA133AB0066FF9A /* PasteBoard_MenuItem.m in Sources */,
+				501FF8691EA133AB0066FF9A /* MWPasteBoardPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		501FF85D1EA133860066FF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		501FF85E1EA133860066FF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		501FF8601EA133860066FF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MWPasteBoard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxfish.MWPasteBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		501FF8611EA133860066FF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MWPasteBoard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxfish.MWPasteBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		501FF8541EA133860066FF9A /* Build configuration list for PBXProject "MWPasteBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501FF85D1EA133860066FF9A /* Debug */,
+				501FF85E1EA133860066FF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501FF85F1EA133860066FF9A /* Build configuration list for PBXNativeTarget "MWPasteBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501FF8601EA133860066FF9A /* Debug */,
+				501FF8611EA133860066FF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 501FF8511EA133860066FF9A /* Project object */;
+}
