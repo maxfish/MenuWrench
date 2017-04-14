@@ -23,7 +23,7 @@
 
 - (void)stop;
 
-@property(readonly, copy) NSMenuItem *menuItem;
+@property(readonly) NSMenuItem *menuItem;
 
 @end
 
