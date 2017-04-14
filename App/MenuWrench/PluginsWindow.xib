@@ -19,7 +19,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <rect key="contentRect" x="1644" y="799" width="480" height="327"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-            <value key="minSize" type="size" width="453" height="358"/>
+            <value key="minSize" type="size" width="480" height="327"/>
             <view key="contentView" id="Vfk-fP-ef4">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="327"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -64,7 +64,7 @@
                                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyg-20-vZO">
                                                             <rect key="frame" x="1" y="3" width="4" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" title="Color label" drawsBackground="YES" id="vOl-by-mZR">
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" focusRingType="none" drawsBackground="YES" id="vOl-by-mZR">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
