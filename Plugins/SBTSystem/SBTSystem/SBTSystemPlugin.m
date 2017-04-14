@@ -22,9 +22,6 @@ NSString *const kConfigEnabledKey = @"enable";
     NSMutableDictionary *_pluginConfig;
 
     SystemDefaults *_defaults;
-
-    NSMenuItem *_itemShowHiddenFiles;
-    NSMenuItem *_itemShowDesktopIcons;
 }
 
 - (id)init {
@@ -72,8 +69,9 @@ NSString *const kConfigEnabledKey = @"enable";
 
     [m2 setSubmenu:s1];
     [self.menuItem setSubmenu:self.submenu];
-
-    [[self.submenu addItemWithTitle:@"Clean up 'Open with' associations" action:@selector(cleanOpenWithAssociations:) keyEquivalent:@""] setTarget:SystemDefaults.class];
+    NSMenuItem *cleanItem = [self.submenu addItemWithTitle:@"Clean up 'Open with' associations" action:@selector(cleanOpenWithAssociations:) keyEquivalent:@""];
+    [cleanItem setEnabled:YES];
+    [cleanItem setTarget:self];
 }
 
 - (NSMenuItem *)menuItem {
@@ -96,7 +94,7 @@ NSString *const kConfigEnabledKey = @"enable";
     [menuItem setState:newState ? NSOnState : NSOffState];
 }
 
-+ (void)cleanOpenWithAssociations:(id)sender {
+- (void)cleanOpenWithAssociations:(id)sender {
     NSArray *arguments = @[@"-kill", @"-r", @"-domain", @"local", @"-domain", @"user"];
     NSTask *task = [NSTask launchedTaskWithLaunchPath:@"/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister" arguments:arguments];
     [task waitUntilExit];
