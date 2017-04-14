@@ -11,6 +11,7 @@
 #import "AppSettings.h"
 #import "Utils.h"
 #import "PluginsWindowController.h"
+#import "MWPluginInterface.h"
 
 @interface AppDelegate () {
     AppSettings *_appSettings;
