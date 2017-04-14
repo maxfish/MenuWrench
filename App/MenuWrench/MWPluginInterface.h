@@ -23,7 +23,7 @@
 
 - (void)stop;
 
-@property(NS_NONATOMIC_IOSONLY, readonly, copy) NSMenuItem *menuItem;
+@property(readonly, copy) NSMenuItem *menuItem;
 
 @end
 
