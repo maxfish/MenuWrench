@@ -19,9 +19,9 @@
 }
 
 - (void)setupWithPlugin:(Plugin *)plugin {
-    NSString *nameString = [[NSString alloc] initWithFormat:@"%@ v.%@", plugin.name, plugin.version];
-    [_nameLabel setStringValue:nameString];
-    [_descriptionLabel setStringValue:plugin.description];
+    [_nameLabel setStringValue:plugin.name];
+    NSString *descriptionString = [[NSString alloc] initWithFormat:@"%@ - v.%@", plugin.description, plugin.version];
+    [_descriptionLabel setStringValue:descriptionString];
 }
 
 @end
