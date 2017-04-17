@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1A5640B500085A1CCB6D2987 /* MagnifierTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A564D442F6FFAB3EC13D518 /* MagnifierTool.m */; };
-		1A5643606598A0C2450BDEC7 /* MagnifierWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5645B6DAA527CA8DE33727 /* MagnifierWindow.xib */; };
 		50A01F9A1EA21E0300ED471F /* MWDeveloperPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A01F991EA21E0300ED471F /* MWDeveloperPlugin.m */; };
 		50D8908D1EA221E000AA4738 /* MagnifierTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D8908C1EA221E000AA4738 /* MagnifierTool.xib */; };
 		50D890901EA2237700AA4738 /* MagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8908F1EA2237700AA4738 /* MagnifierView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A5645B6DAA527CA8DE33727 /* MagnifierWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagnifierWindow.xib; sourceTree = "<group>"; };
 		1A564D3728D7125BBDDA6CD0 /* MagnifierTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifierTool.h; sourceTree = "<group>"; };
 		1A564D442F6FFAB3EC13D518 /* MagnifierTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifierTool.m; sourceTree = "<group>"; };
 		50A01F8E1EA21DB500ED471F /* MWDeveloperPlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWDeveloperPlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +65,6 @@
 				50D8908C1EA221E000AA4738 /* MagnifierTool.xib */,
 				50D8908E1EA2237700AA4738 /* MagnifierView.h */,
 				50D8908F1EA2237700AA4738 /* MagnifierView.m */,
-				1A5645B6DAA527CA8DE33727 /* MagnifierWindow.xib */,
 			);
 			path = MWDeveloperPlugin;
 			sourceTree = "<group>";
@@ -130,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D8908D1EA221E000AA4738 /* MagnifierTool.xib in Resources */,
-				1A5643606598A0C2450BDEC7 /* MagnifierWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
