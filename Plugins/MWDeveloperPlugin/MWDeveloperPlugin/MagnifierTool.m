@@ -22,9 +22,9 @@
         NSPanel *w = (NSPanel *) [self window];
         [w setHidesOnDeactivate:NO];
         [w setFloatingPanel:YES];
-        [w setStyleMask:NSWindowStyleMaskTitled|NSUtilityWindowMask|NSWindowStyleMaskClosable| NSWindowStyleMaskResizable| NSWindowStyleMaskNonactivatingPanel];
+        [w setStyleMask:NSWindowStyleMaskTitled | NSUtilityWindowMask | NSWindowStyleMaskClosable | NSWindowStyleMaskResizable | NSWindowStyleMaskNonactivatingPanel];
         [w setLevel:kCGMaximumWindowLevelKey];
-        [w setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces|NSWindowCollectionBehaviorFullScreenAuxiliary|NSWindowCollectionBehaviorTransient];
+        [w setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces | NSWindowCollectionBehaviorFullScreenAuxiliary | NSWindowCollectionBehaviorTransient];
         [w center];
         [w orderFront:nil];
     }
@@ -34,8 +34,7 @@
 
 - (void)show {
     [self showWindow:[self window]];
-    [NSApp activateIgnoringOtherApps:YES];
-    
+
     if (!_timer || ![_timer isValid]) {
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.05
                                                   target:self
