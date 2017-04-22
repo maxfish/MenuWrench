@@ -44,12 +44,13 @@
     }
 }
 
-- (void)hide {
-    [_timer invalidate];
-    _timer = nil;
-}
-
 - (void)refreshTimer:(NSTimer *)timer {
+    if (![self.window isVisible]) {
+        [_timer invalidate];
+        _timer = nil;
+        return;
+    }
+
     NSPoint mouseLocation = [self getMouseLocationOnScreen];
     [_magnifierView setMouseLocation:mouseLocation];
 

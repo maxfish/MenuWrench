@@ -63,7 +63,9 @@ NSString *const kConfigEnabledKey = @"enable";
 }
 
 - (void)showMagnifierTool:(id)sender {
-    _magnifierTool = [[MagnifierTool alloc] init];
+    if (!_magnifierTool) {
+        _magnifierTool = [[MagnifierTool alloc] init];
+    }
     [_magnifierTool show];
 }
 
