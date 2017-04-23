@@ -79,64 +79,83 @@
     CGImageRelease(imageRef);
 }
 
-//- (void)drawRect_Small:(NSRect)dirtyRect {
-//    [super drawRect:dirtyRect];
+//- (void)drawRect_xx:(NSRect)dirtyRect {
+//    CGRect viewBounds = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+//    int scale = _zoomFactor * 2;
+//    int visiblePixelsH = (int) ((viewBounds.size.width - (int) self.bounds.size.width % scale) / scale + 1);
+//    int visiblePixelsV = (int) ((viewBounds.size.height - (int) self.bounds.size.height % scale) / scale + 1);
 //
 //    CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
 //    CGContextSetBlendMode(context, kCGBlendModeNormal);
 //    CGContextSetInterpolationQuality(context, kCGInterpolationNone);
-//    CGContextTranslateCTM(context, 0.0, self.bounds.size.height);
-//    CGContextScaleCTM(context, 1.0, -1.0);
+//    CGContextSetRGBFillColor(context, 0.1, 0.1, 0.1, 1);
+//    CGContextFillRect(context, self.bounds);
 //
-//    int scale = _zoomFactor * 2;
-//    CGRect clipRect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-//    CGRect drawRect = clipRect;
+////    CGContextTranslateCTM(context, 0.0, self.bounds.size.height);
+////    CGContextScaleCTM(context, 1.0, -1.0);
 //
-//    NSScreen *mainScreen = [NSScreen mainScreen];
-//    NSRect screenRect = [mainScreen frame];
+//    // Get current screen
+//    NSScreen *screen = [self _screenContainingPoint:_mouseLocation];
+//    if (!screen) {
+//        return;
+//    }
+//    CGFloat backingScaleFactor = [screen backingScaleFactor];
+//    NSRect screenRect = [screen frame];
 //
-////    CGImageRef imageRef2 = CGDisplayCreateImage(CGMainDisplayID())
+//    // Capture image
 //    CGRect sourceRect = CGRectMake(
-//            (int) (_mouseLocation.x - self.bounds.size.width / 2 / scale),
-//            screenRect.size.height - (int) (_mouseLocation.y + self.bounds.size.height / 2 / scale),
-//            clipRect.size.width / scale,
-//            clipRect.size.height / scale
+//            (int) (_mouseLocation.x - visiblePixelsH / 2),
+//            screenRect.size.height - (int) (_mouseLocation.y + visiblePixelsV / 2),
+//            visiblePixelsH,
+//            visiblePixelsV
 //    );
-//    CGImageRef imageRef = CGDisplayCreateImageForRect(CGMainDisplayID(), sourceRect);
+//    CGWindowID windowID = (CGWindowID) [self.window windowNumber];
+//    CGImageRef imageRef = CGWindowListCreateImage(sourceRect, kCGWindowListOptionOnScreenBelowWindow, windowID, (kCGWindowImageBoundsIgnoreFraming));
+//
 //    CGDataProviderRef provider = CGImageGetDataProvider(imageRef);
 //    CFDataRef dataref = CGDataProviderCopyData(provider);
-//    size_t imageWidth = CGImageGetWidth(imageRef);
-//    size_t imageHeight = CGImageGetHeight(imageRef);
-//    size_t bpp = CGImageGetBitsPerPixel(imageRef) / 8;
+//    const UInt8 *data = CFDataGetBytePtr(dataref);
+//    int imageWidth = (int) CGImageGetWidth(imageRef);
+//    int imageHeight = (int) CGImageGetHeight(imageRef);
+//    CFRelease(dataref);
 //
-//    if (imageWidth < sourceRect.size.width) {
-//        int diffX = (int) ((sourceRect.size.width - imageWidth) * scale);
-//        if (sourceRect.origin.x < 0) {
-//            drawRect.origin.x = diffX;
-//        }
+//    int numberOfColorComponents = 4;
+//    int x = visiblePixelsH / 2 + 9;
+//    int y = imageHeight - (visiblePixelsV / 2 -1);
+//    int coordinate = ((imageWidth * y) + x);
+//    int pixelInfo = coordinate * numberOfColorComponents;
+//
+//    if (x < 0 || y < 0 || x >= imageWidth || y >= imageHeight) {
+//        _red = _green = _blue = 0;
+//    } else {
+//        _blue = data[pixelInfo];
+//        _green = data[(pixelInfo + 1)];
+//        _red = data[pixelInfo + 2];
+//        // UInt8 alpha = data[pixelInfo + 3];
 //    }
-//    if (sourceRect.origin.y < 0) {
-//        drawRect.origin.y = -sourceRect.origin.y * scale;
-////        int diffY = (int) ((sourceRect.size.height - imageHeight) * scale);
-////        if (sourceRect.origin.y < 0) {
-////            drawRect.origin.y = diffY;
-////        }
-//    }
-//    drawRect.size.width = imageWidth * scale;
-//    drawRect.size.height = imageHeight * scale;
 //
-//    CGContextSetRGBFillColor(context, 0.1, 0.1, 0.1, 1);
-//    CGContextFillRect(context, clipRect);
-//
-//    CGContextScaleCTM(context, 1.0, -1.0);
-//    CGContextTranslateCTM(context, 0, -self.bounds.size.height);
+//    // Draw image
+//    CGRect drawRect = CGRectMake(0, 0, visiblePixelsH * scale, visiblePixelsV * scale);
 //    CGContextDrawImage(context, drawRect, imageRef);
 //
-//    CGContextSetRGBStrokeColor(context, 0, 0, 0, 1);
-//    CGContextStrokeRectWithWidth(context, CGRectMake(clipRect.size.width / 2 - scale / 2 - 0.5, clipRect.size.height / 2 - scale / 2 - 0.5, scale + 1, scale + 1), 1);
+//    // Draw crosshair
+//    CGFloat crossX = (visiblePixelsH / 2 - 1) * scale;
+//    CGFloat crossY = (visiblePixelsV / 2 +1) * scale;
+//    CGContextStrokeRectWithWidth(context, CGRectMake(crossX + 0.5, crossY + 0.5, scale - 1, scale - 1), 1);
 //
-//    CFRelease(dataref);
 //    CGImageRelease(imageRef);
 //}
+
+- (NSScreen *)_screenContainingPoint:(NSPoint)point {
+    for (NSScreen *screen in [NSScreen screens]) {
+        NSRect frame = [screen frame];
+        frame.size.width += 1;
+        frame.size.height += 1;
+        if (NSPointInRect(point, frame)) {
+            return screen;
+        }
+    }
+    return nil;
+}
 
 @end
