@@ -14,7 +14,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        _zoomFactor = 2; // *2 = 4
+        _zoomFactor = 2; // '4x'
     }
     return self;
 }
@@ -29,7 +29,13 @@
     CGContextSetRGBFillColor(context, 0.4, 0.4, 0.4, 1);
     CGContextSetRGBStrokeColor(context, 0, 0, 0, 1);
 
-    CGImageRef imageRef = CGDisplayCreateImage(CGMainDisplayID());
+    NSScreen *screen = [self _screenContainingPoint:_mouseLocation];
+    NSDictionary *screenDescription = [screen deviceDescription];
+    NSRect mouseRect = [screen convertRectToBacking:CGRectMake(_mouseLocation.x, _mouseLocation.y, 0.5, 0.5)];
+    _mouseLocation = mouseRect.origin;
+
+    CGDirectDisplayID theCGDisplayID = (CGDirectDisplayID) [screenDescription[@"NSScreenNumber"] pointerValue];
+    CGImageRef imageRef = CGDisplayCreateImage(theCGDisplayID);
     CGRect screenRect = CGRectMake(0, 0, CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
 
     CGDataProviderRef provider = CGImageGetDataProvider(imageRef);
