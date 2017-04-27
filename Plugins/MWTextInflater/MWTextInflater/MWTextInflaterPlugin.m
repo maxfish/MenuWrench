@@ -243,8 +243,8 @@ NSString *const kConfigEnabledKey = @"enable";
     for (NSString *fileName in filesList) {
         // Load snippet file
         NSDictionary *plistContents = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", self.absoluteConfigPath, fileName]];
-        NSString *prefix = plistContents[@"prefix"] ? plistContents[@"prefix"] : @"";
-        NSString *suffix = plistContents[@"suffix"] ? plistContents[@"suffix"] : @"";
+        NSString *prefix = plistContents[@"prefix"] ? [self _displayableStringFrom:plistContents[@"prefix"]] : @"";
+        NSString *suffix = plistContents[@"suffix"] ? [self _displayableStringFrom:plistContents[@"suffix"]] : @"";
 
         // Load snippets
         NSMutableArray *snippets = [NSMutableArray array];
@@ -280,7 +280,7 @@ NSString *const kConfigEnabledKey = @"enable";
 
         // Snippets
         for (Snippet *snippet in snippets) {
-            [self addMenuItemWithTitle:[NSString stringWithFormat:@"%@ -> %@", snippet.fullAbbreviation, snippet.label] toMenu:subMenu target:self action:nil];
+            [self addMenuItemWithTitle:[NSString stringWithFormat:@"'%@' -> %@", snippet.fullAbbreviation, snippet.label] toMenu:subMenu target:self action:nil];
         }
     }
 }
@@ -303,6 +303,16 @@ NSString *const kConfigEnabledKey = @"enable";
 
 - (void)_removeEventMonitor:(id)monitor {
     [NSEvent removeMonitor:monitor];
+}
+
+- (NSString *)_displayableStringFrom:(NSString *)string {
+    if ([string isEqualToString:@" "]) {
+        return @"␣";
+    } else if ([string isEqualToString:@"\n"]) {
+        return @"⏎";
+    }
+
+    return string;
 }
 
 #pragma - Files and folders
