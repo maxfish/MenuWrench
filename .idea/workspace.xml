@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bff1e030-899c-489f-823f-be0e3825b05a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/App/MenuWrench.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/App/MenuWrench.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/MenuWrench/AboutWindow.xib" beforeDir="false" afterPath="$PROJECT_DIR$/App/MenuWrench/AboutWindow.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/MenuWrench/AppSettings.m" beforeDir="false" afterPath="$PROJECT_DIR$/App/MenuWrench/AppSettings.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/MenuWrench/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/App/MenuWrench/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MWDeveloperPlugin/MWDeveloperPlugin.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MWDeveloperPlugin/MWDeveloperPlugin.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MWDeveloperPlugin/MWDeveloperPlugin/MagnifierTool.m" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MWDeveloperPlugin/MWDeveloperPlugin/MagnifierTool.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MWSystem/MWSystem.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MWSystem/MWSystem.xcodeproj/project.pbxproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1UZrlCPvwFQ8zHhtwQCDU36lCXw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.MenuWrench - Release">
+    <configuration name="MWDeveloperPlugin" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MWDeveloperPlugin" TARGET_NAME="MWDeveloperPlugin" CONFIG_NAME="Debug" SCHEME_NAME="MWDeveloperPlugin" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuWrench - Release" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MenuWrench" TARGET_NAME="MenuWrench" CONFIG_NAME="Release" SCHEME_NAME="MenuWrench - Release" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="MenuWrench" RUN_TARGET_NAME="MenuWrench" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuWrench" type="AppleRunConfiguration" factoryName="Application" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MenuWrench" TARGET_NAME="MenuWrench" CONFIG_NAME="Debug" SCHEME_NAME="MenuWrench" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="MenuWrench" RUN_TARGET_NAME="MenuWrench" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MWDeveloperPlugin" />
+      <item itemvalue="Application.MenuWrench" />
+      <item itemvalue="Application.MenuWrench - Release" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="660" y="306" key="#MWDeveloperPlugin" timestamp="1575576444831">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="660" y="306" key="#MWDeveloperPlugin/0.23.1920.1177@0.23.1920.1177" timestamp="1575576444831" />
+    <state x="436" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575580984061">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="436" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1575580984061" />
+    <state x="436" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1575576489508" />
+    <state width="1878" height="271" key="GridCell.Tab.0.bottom" timestamp="1575580880982">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575580871069" />
+    <state width="1878" height="271" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1575580880982" />
+    <state width="1878" height="271" key="GridCell.Tab.0.center" timestamp="1575580880981">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="271" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575580871067" />
+    <state width="1878" height="271" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1575580880981" />
+    <state width="1878" height="271" key="GridCell.Tab.0.left" timestamp="1575580880980">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="271" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575580871066" />
+    <state width="1878" height="271" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1575580880980" />
+    <state width="1878" height="271" key="GridCell.Tab.0.right" timestamp="1575580880981">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="271" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575580871068" />
+    <state width="1878" height="271" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1575580880981" />
+    <state width="500" height="400" key="SwitcherDM" timestamp="1575577073061">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="500" height="400" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1575577073061" />
+    <state x="637" y="443" key="com.intellij.ide.util.TipDialog" timestamp="1575575128147">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="637" y="443" key="com.intellij.ide.util.TipDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1575575128147" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1575577083561">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1575577083561" />
+  </component>
+</project>

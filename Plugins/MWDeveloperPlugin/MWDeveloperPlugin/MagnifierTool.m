@@ -59,7 +59,7 @@
 
     NSString *hexColor = [NSString stringWithFormat:@"#%02X%02X%02X", _magnifierView.red, _magnifierView.green, _magnifierView.blue];
     NSString *rgbColor = [NSString stringWithFormat:@"%i,%i,%i", _magnifierView.red, _magnifierView.green, _magnifierView.blue];
-    NSString *rgb = [NSString stringWithFormat:@"#%@ / %i,%i,%i", hexColor, _magnifierView.red, _magnifierView.green, _magnifierView.blue];
+//    NSString *rgb = [NSString stringWithFormat:@"#%@ / %i,%i,%i", hexColor, _magnifierView.red, _magnifierView.green, _magnifierView.blue];
     [_rgbLabel setStringValue:[NSString stringWithFormat:@"%@ / %@", hexColor, rgbColor]];
     [_colorWell setColor:[NSColor colorWithRed:_magnifierView.red / 256.0 green:_magnifierView.green / 256.0 blue:_magnifierView.blue / 256.0 alpha:1]];
 

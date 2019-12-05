@@ -12,7 +12,7 @@
 
 #define CONFIG_FILE_NAME @"config.plist"
 #define kStartAtLoginKey @"startAtLogin"
-#define kAppDataPath @"Apps/MenuWrench"
+#define kAppDataPath @"MenuWrench"
 
 @implementation AppSettings {
 }
@@ -38,12 +38,13 @@
 }
 
 - (NSString *)settingsPath {
-    NSString *dropboxFolder = [Utils dropboxFolder];
-    NSString *settingsPath = [NSString stringWithFormat:@"%@/%@", dropboxFolder, kAppDataPath];
+    NSString *settingsPath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), kAppDataPath];
 
     if (![Utils doesFolderExistAtPath:settingsPath]) {
-        [Utils createFolderAtPath:settingsPath];
+        bool success = [Utils createFolderAtPath:settingsPath];
+        NSLog(@"Settings path created -> %d", success);
     }
+    NSLog(@"Settings path '%@'", settingsPath);
     return settingsPath;
 }
 
